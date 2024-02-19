@@ -1,0 +1,34 @@
+body.lock{
+	overflow: hidden;
+	touch-action: none;
+	overscroll-behavior: none;
+}
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background-color: rgba(#000000, 0.8);
+	overflow-y: auto;
+	overflow-x: hidden;
+	filter: opacity(0);
+	visibility: hidden;
+	transition:
+		filter 0.8s,
+		visibility 0.8s;
+	z-index: 100;
+}
+
+.popup.open {
+	filter: opacity(1);
+	visibility: visible;
+}
+.popup__body {
+	min-height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: toRem(30) toRem(15);
+}
