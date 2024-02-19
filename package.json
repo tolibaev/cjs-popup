@@ -1,0 +1,10 @@
+{
+  "name": "cjs-popup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "popups.js",
+  "module": "popups.js",
+  "type": "module",
+  "author": "Rinat",
+  "license": "ISC"
+}
